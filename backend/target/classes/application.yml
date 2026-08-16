@@ -1,0 +1,26 @@
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: enterprise-wms-backend
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb+srv://bouddhsarthak_db_user:nsC6mdunBluARGTX@cluster0.c9ojlbs.mongodb.net}
+      database: ${SPRING_DATA_MONGODB_DATABASE:wms_db}
+      auto-index-creation: true
+
+app:
+  jwt:
+    secret: ${APP_JWT_SECRET:9a6f8b12c4e3d5a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1}
+    expiration-ms: 86400000
+
+logging:
+  level:
+    com.wms: INFO
+    org.springframework.security: WARN
