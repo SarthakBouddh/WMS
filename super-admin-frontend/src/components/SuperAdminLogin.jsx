@@ -134,7 +134,7 @@ export default function SuperAdminLogin({ onLoginSuccess }) {
 
           <button
             type="submit"
-            className="btn-primary"
+            className={`w-full flex items-center justify-center gap-[10px] p-[14px] bg-gradient-to-br from-indigo-500 to-violet-500 border-0 rounded-[10px] text-white text-base font-bold ${loading ? 'cursor-not-allowed opacity-[0.65]' : 'cursor-pointer opacity-100'} shadow-[0_8px_20px_rgba(99,102,241,0.3)] transition-all duration-200`}
             disabled={loading}
             style={{ width: '100%', justifyContent: 'center', padding: '14px', fontSize: '1rem' }}
           >

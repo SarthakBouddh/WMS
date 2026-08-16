@@ -292,25 +292,7 @@ export default function LoginView({ onLoginSuccess }) {
           <button
             type="submit"
             disabled={loading}
-            style={{
-              width: '100%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '10px',
-              padding: '14px',
-              background:
-                'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-              border: 'none',
-              borderRadius: '10px',
-              color: '#ffffff',
-              fontSize: '1rem',
-              fontWeight: 700,
-              cursor: loading ? 'not-allowed' : 'pointer',
-              opacity: loading ? 0.65 : 1,
-              boxShadow: '0 8px 20px rgba(99, 102, 241, 0.3)',
-              transition: 'all 0.2s'
-            }}
+            className={`w-full flex items-center justify-center gap-[10px] p-[14px] bg-gradient-to-br from-indigo-500 to-violet-500 border-0 rounded-[10px] text-white text-base font-bold ${loading ? 'cursor-not-allowed opacity-[0.65]' : 'cursor-pointer opacity-100'} shadow-[0_8px_20px_rgba(99,102,241,0.3)] transition-all duration-200`}
             onMouseEnter={(e) => {
               if (!loading) {
                 e.currentTarget.style.transform = 'translateY(-1px)';
