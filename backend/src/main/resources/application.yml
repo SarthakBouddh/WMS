@@ -11,7 +11,7 @@ spring:
     allow-circular-references: true
   data:
     mongodb:
-      uri: ${SPRING_DATA_MONGODB_URI:mongodb+srv://bouddhsarthak_db_user:nsC6mdunBluARGTX@cluster0.c9ojlbs.mongodb.net}
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb+srv://bouddhsarthak_db_user:nsC6mdunBluARGTX@cluster0.c9ojlbs.mongodb.net/wms_db?retryWrites=true&w=majority}
       database: ${SPRING_DATA_MONGODB_DATABASE:wms_db}
       auto-index-creation: true
 
